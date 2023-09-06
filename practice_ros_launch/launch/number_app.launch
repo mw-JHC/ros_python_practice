@@ -1,0 +1,7 @@
+<launch>
+    <param name = "/number_publish_frequency" type = "double" value = "3.0"/>
+    <param name = "/number_to_bulish" type = "int" value = "2"/>
+
+    <node name = "number_publisher_with_rosparam" pkg = "practice_ros_param" type = "number_publisher_with_rosparam.py"/>
+    <node name = "number_counter" pkg = "practice_topic" type = "number_counter.py"/>
+</launch>
